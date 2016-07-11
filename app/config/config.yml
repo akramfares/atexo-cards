@@ -64,3 +64,12 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+guzzle:
+    clients:
+        api_atexo:
+            base_url: "https://recrutement.local-trust.com"
+            headers:
+                Accept: "application/json"
+            options:
+                verify: false
